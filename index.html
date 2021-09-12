@@ -76,8 +76,48 @@
         }
 
         .img {
-            
+            position: relative;
+            transform: translateY(20px) scale(1.2); /*Trae la imagen adelante*/
+            transform-origin: 50%;
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .container-images:hover .img {
+            transform: translateY(0) scale(1.2) /*elevacion de img*/
+        }
+
+        /* corregimos medidas de img para el fondo */
+        .img1 {
+            width:  340px;
+            top: 164px;
+            left: 22px;
+        }
+
+        /* linea - separador */
+        .divider {
+            width: 160px;
+            height: 1px;
+            background-color: #e47c7c;
+        }
+
+        /* edicion del nombre "Vladimir" */
+        .name {
+            margin-top: 15px;
+            font-size: 35px;
+            letter-spacing: 2px;
+            text-align: center;
+            font-weight: bold;
+            color: #333436;
+        }
+
+        /* edicion del titulo "developer" */
+        .title {
+            margin-top: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: #6e6e6e;
+        }
+
     </style>
 </body>
 </html>
